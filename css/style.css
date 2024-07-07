@@ -21,15 +21,19 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-     background-color: #DADEF7; 
-     width: 393px;
-}
-
-html {
+html * {
      font-family: "Arial", sans-serif;
      font-size: 20px;
      color: #532D78; 
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     background-color: #DADEF7; 
+     width: 393px;
 }
 
 .bookBtn,
@@ -61,7 +65,7 @@ a {
      font-weight: 400;
 }
 
-.about {
+.about * {
      font-family: 'Alata', sans-serif;
      font-size: 30px;
 }
@@ -76,7 +80,7 @@ footer a {
 /*******************************************/
 
 body {
-     margin-top: 44px;
+     margin-top: 20px;
 }
 
 /* ---------- Flex Classes ---------- */
@@ -151,6 +155,7 @@ main img {
      object-fit: cover;
      overflow: hidden;
 }
+
 
 .imgGroupTwo img {
      width: 213px;
