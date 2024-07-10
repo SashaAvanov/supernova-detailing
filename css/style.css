@@ -210,7 +210,7 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/*Image modal*/
+/* Image modal */
 
 .modal {
      width: 100%;
@@ -238,7 +238,16 @@ footer {
      object-fit: cover;
  }
 
- /*Modal close button*/
+ /* Mobile img sizing */
+
+ @media screen and (max-width: 635px) {
+     .modal img {
+          width: 90%;
+          object-fit: cover;
+      }
+ }
+
+ /* Modal close button */
 
  .closeBtn {
      color: rgba(255, 255, 255, 0.87);
