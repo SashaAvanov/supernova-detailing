@@ -238,7 +238,7 @@ footer {
      object-fit: cover;
  }
 
- /* Mobile img sizing */
+ /* Mobile/tablet img sizing */
 
  @media screen and (max-width: 635px) {
      .modal img {
