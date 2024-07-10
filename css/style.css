@@ -192,12 +192,16 @@ span {
 .about {
      min-width: 354px;
      min-height: 235px;
-     margin: 0 19px 80px 20px;
+     margin: 0 19px 20px 20px;
      display: flex;
      flex-direction: column;
      justify-content: space-around;
      align-items: center;
      text-align: center;
+}
+
+.about span:last-of-type {
+     margin-top: 40px;
 }
 
 /* ---------- Footer ---------- */
