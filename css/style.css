@@ -23,7 +23,7 @@
 
 html * {
      font-family: "Arial", sans-serif;
-     font-size: 20px;
+     font-size: 25px;
      color: #532D78; 
 }
 
@@ -33,7 +33,6 @@ html {
 
 body {
      background-color: #DADEF7; 
-     width: 393px;
 }
 
 .bookBtn,
@@ -52,7 +51,7 @@ h2 {
 }
 
 .media span {
-     font-size: 15px;
+     font-size: 18.75px;
 }
 
 .services h2 {
@@ -71,12 +70,30 @@ a {
 
 .about * {
      font-family: 'Alata', sans-serif;
-     font-size: 30px;
+     font-size: 37.5px;
 }
 
 footer a {
-     font-size: 12px;
+     font-size: 15px;
      font-weight: 400;
+}
+
+@media screen and (max-width: 680px) {
+     html * {
+          font-size: 20px;
+     }
+
+     .media span {
+          font-size: 15px;
+     }
+
+     .about * {
+          font-size: 30px;
+     }
+
+     footer a {
+          font-size: 12px;
+     }
 }
 
 /******************************************
@@ -84,6 +101,7 @@ footer a {
 /*******************************************/
 
 body {
+     min-width: 350px;
      margin-top: 20px;
 }
 
@@ -106,7 +124,7 @@ header, nav, nav ul {
 }
 
 nav {
-     margin: 0 10px;
+     margin: 0 20px;
 }
 
 nav ul {
@@ -116,18 +134,19 @@ nav ul {
 }
 
 nav li {
-     height: 31px;
-     width: 76px;
+     height: 38.75px;
+     width: 95px;
 }
 
 /* ---------- Main ---------- */
 main {
+     height: 850px;
      min-height: 600px;
 }
 
 main img {
-     height: 292px;
-     width: 293px;
+     height: 584px;
+     width: 586px;
 }
 
 /* ---------- Media ---------- */
@@ -148,13 +167,13 @@ main img {
 }
 
 .imgGroupOne {
-     width: 100px;
-     height: 190px;
+     width: 200px;
+     height: 380px;
 }
 
 .imgGroupOne div {
-     width: 100px;
-     height: 95px;
+     width: 200px;
+     height: 190px;
 }
 
 .imgGroupOne img {
@@ -166,12 +185,14 @@ main img {
 
 .imgGroupTwo div,
 .imgGroupTwo img {
-     width: 213px;
-     height: 190px;
+     /*width: 426px;*/
+     width: 450px;
+     height: 380px;
 }
 
 /* ---------- Services ---------- */
 .services {
+     height: 750px;
      min-width: 353px;
      min-height: 690px;
      margin: 0 20px 75px;
@@ -190,9 +211,10 @@ span {
 
 /* ---------- About ---------- */
 .about {
+     height: 300px;
      min-width: 354px;
      min-height: 235px;
-     margin: 0 19px 20px 20px;
+     margin: 0 19px 40px 20px;
      display: flex;
      flex-direction: column;
      justify-content: space-around;
@@ -201,7 +223,7 @@ span {
 }
 
 .about span:last-of-type {
-     margin-top: 40px;
+     margin-top: 50px;
 }
 
 /* ---------- Footer ---------- */
@@ -210,11 +232,65 @@ footer {
      text-align: center;
 }
 
+@media screen and (max-width: 680px) {
+
+     nav {
+          margin: 0 10px;
+     }
+
+     nav li {
+          height: 31px;
+          width: 76px;
+     }
+
+     main {
+          height: 600px;
+     }
+
+     main img {
+          height: 292px;
+          width: 293px;
+     }
+
+     .imgGroupOne {
+          width: 100px;
+          height: 190px;
+     }
+     
+     .imgGroupOne div {
+          width: 100px;
+          height: 95px;
+     }
+
+     .imgGroupTwo div,
+     .imgGroupTwo img {
+          width: 225px;
+          height: 190px;
+     }
+
+     .services {
+          height: 690px;
+     }
+
+     .about {
+          height: 235px;
+          margin-bottom: 20px;
+     }
+
+     footer {
+          margin: 0 20px 40px;
+     }
+
+     .about span:last-of-type {
+          margin-top: 40px;
+     }
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* Image modal */
+/* ---------- Image modal ---------- */
 
 .modal {
      width: 100%;
@@ -244,7 +320,14 @@ footer {
 
  /* Mobile/tablet img sizing */
 
- @media screen and (max-width: 635px) {
+ @media screen and (max-width: 1500px) {
+     .modal img {
+          width: 70%;
+          object-fit: cover;
+      }
+ }
+
+ @media screen and (max-width: 680px) {
      .modal img {
           width: 90%;
           object-fit: cover;
