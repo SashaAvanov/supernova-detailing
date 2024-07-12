@@ -142,6 +142,7 @@ nav li {
 main {
      height: 850px;
      min-height: 600px;
+     margin-bottom: 150px;
 }
 
 main img {
@@ -185,7 +186,6 @@ main img {
 
 .imgGroupTwo div,
 .imgGroupTwo img {
-     /*width: 426px;*/
      width: 450px;
      height: 380px;
 }
@@ -283,6 +283,12 @@ footer {
 
      .about span:last-of-type {
           margin-top: 40px;
+     }
+}
+
+@media screen and (max-width: 480px) {
+     main {
+          margin-bottom: 0px;
      }
 }
 
